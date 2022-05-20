@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; TODO: Agregar boostrap*/ 
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Thin";
+    font-weight: 100;
+    src: url("/assets/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    font-weight: 100;
+    src: url("/assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    font-weight: 100;
+    src: url("/assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+/*******************************
+            FUENTES
+*******************************/
+
+.montserrat-thin{
+    font-family: 'Montserrat-Thin', sans-serif !important;
+}
+
+.montserrat-light{
+    font-family: 'Montserrat-Light', sans-serif !important;
+}
+
+.montserrat-semibold{
+    font-family: 'Montserrat-SemiBold', sans-serif !important;
+}
+
+/*******************************
+            GLOBALES
+*******************************/
+
+body {
+    /* Fondo gradiante azul */
+    /* background: rgb(18,9,157); */
+    /* background-color: #303841; */
+    /* background: linear-gradient(90deg, rgba(69,80,93,1) 0%, rgba(48,56,65,1) 100%); */
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+/*******************************
+            BOTONES
+*******************************/
+
+.btnVerdeClaro {
+    /* background: rgb(58, 215, 196); */
+    /* Verde claro izqueirda: #3AD7C4 || Verde oscuro derecha HEX: #01B7D0 */
+    background: linear-gradient(90deg, rgba(58, 215, 196, 1) 0%, rgba(1, 183, 208, 1) 100%); /* HORIZONTAL */
+    /* background: radial-gradient(circle, rgb(3, 160, 180) 0%, rgb(62, 226, 207) 100%); */ /* CIRCULAR */
+    color: #ffffff;
+}
+
+.btnGris{
+    /* background: rgb(86,96,108); */
+    background: linear-gradient(90deg, rgba(99,109,128,1) 0%, rgba(86,96,108,1) 100%); /* HORIZONTAL */
+    /* background: radial-gradient(circle, rgba(86,96,108,1) 0%, rgba(99,109,128,1) 100%); */ /* CIRCULAR */
+    color: #ffffff;
+}
+
+.btnRojo{
+    background: linear-gradient(90deg, rgba(222,134,134,1) 0%, rgba(221,119,119,1) 100%);
+    color: #ffffff;
+}
+
+/*******************************
+            FORMS
+*******************************/
+
+.contenedorForm {
+    border-radius: 10px;
+    background: gray;
+    padding: 20px;
+    /* background-color: #34445f; */
+    background: linear-gradient(90deg, rgba(68,91,130,1) 0%, rgba(52,68,95,1) 100%); /* HORIZONTAL */
+    -webkit-box-shadow: rgb(18, 21, 27) 0px 0px 10px 1px;
+    -moz-box-shadow: rgb(18, 21, 27) 0px 0px 10px 1px;
+    box-shadow: rgb(18, 21, 27) 0px 0px 10px 1px;
+}
+
+.botonCerrarForm{
+    color: gray !important;
+    font-size: 2rem !important;
+    font-weight: 50 !important;
+    text-shadow: none !important;
+    /* width: 32px !important;
+    height: 32px !important; */
+    opacity: 1 !important;
+    position: absolute !important;
+    right: 30px !important;
+    top: 1px !important;
+}
+
+/*******************************
+            COLORES
+*******************************/
+.blanco {
+    color: #ffffff !important;
+}
+
+.gris {
+    color: #99a8bc !important;
+}
+
+.rojo {
+    color: #dd7777 !important;
+}
+
+/*******************************
+            FORMAS
+*******************************/
+
+.lineaDivisoraGris {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+/*Solo para tamaños de 991px o menos (momento en el que aparece el menu hamburguesa)*/
+@media (max-width: 991px){
+
+    /* Ocultar un elemento, cuando es en pantalla con menu hamburguesa (no-lg) */
+    .ocultarEnMobile{
+        display: none;
+    }
+}
+
+/*******************************
+            OTROS
+*******************************/
+
+/* Se utiliza el pointer del mouse como una mano, para indicar que es enlace */
+.cursorPointer{
+    cursor: pointer;
+}

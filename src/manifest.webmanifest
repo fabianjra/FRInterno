@@ -1,0 +1,17 @@
+{
+    "name": "FR Interno",
+    "short_name": "FR Interno",
+    "theme_color": "#1976d2",
+    "background_color": "#303841",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+      {
+        "src": "",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ]
+  }
